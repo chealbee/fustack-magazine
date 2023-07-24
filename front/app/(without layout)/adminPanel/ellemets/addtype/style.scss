@@ -1,0 +1,36 @@
+@import "@/app/styles/variables.scss";
+
+.addbrand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 310px;
+  &__input {
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    &:hover {
+      box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+    }
+    border: 1px solid rgba(89, 174, 224, 0.8);
+  }
+}
+.addbutton {
+  color: #9e9e9e;
+  font-size: 12px;
+  line-height: 150.188%;
+  cursor: pointer;
+  padding: 10px 30px;
+  &:hover {
+    box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+    color: rgba(89, 174, 224);
+  }
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}
+.addbrandcontainer {
+  h4 {
+    font-size: 17px;
+  }
+}

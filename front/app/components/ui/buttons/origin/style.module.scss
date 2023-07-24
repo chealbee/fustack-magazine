@@ -1,0 +1,45 @@
+@import "../../../../styles/variables.scss";
+.button {
+  background: $BrandBlue;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    color: black;
+    background: $yellow;
+  }
+}
+.active {
+  color: black;
+  background: $yellow;
+  &:hover {
+    background: #ffda60;
+  }
+}
+.complite {
+  background: $complite;
+  &:hover {
+    color: white;
+    background: #05dac1;
+  }
+}
+.spaced {
+  border: 3px solid $BrandBlue;
+  background: $spaceblue;
+  color: black;
+  &:hover {
+    background: #ffe79a;
+    border-color: #ffda60;
+  }
+}
+
+.disabled {
+  background: #f0f0f0;
+  color: #7b7b7b;
+  &:hover {
+    background: #f0f0f0;
+    color: #7b7b7b;
+    cursor: not-allowed;
+  }
+}

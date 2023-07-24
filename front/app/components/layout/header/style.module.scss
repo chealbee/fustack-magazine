@@ -1,0 +1,100 @@
+@import "../../../styles/variables.scss";
+
+.header {
+}
+.top {
+  background: $base-color;
+  color: white;
+  padding: 20px 0;
+  ul {
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    li {
+      a {
+        color: white;
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: #ffcf62;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  padding: 14px 10px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-bottom: 5px;
+  }
+  color: $BrandBlue;
+  a {
+    color: inherit;
+  }
+}
+
+.botomContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+  p {
+    font-size: 15px;
+    width: 30px;
+  }
+}
+
+.input {
+  min-width: 550px;
+  margin: 0 10px;
+}
+.psRelativ {
+  position: relative;
+}
+.searchproducts {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  gap: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.searchproduct {
+  transition: all 0.3s ease 0s;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &:hover {
+    transform: scale(1.02);
+  }
+  font-size: 20px;
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.headersearch {
+  z-index: 1;
+  position: relative;
+}

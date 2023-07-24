@@ -1,0 +1,171 @@
+@import "@/app/styles/variables.scss";
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+.filters {
+  width: 400px;
+  flex: 0 0 330px;
+  background: #ffffff;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  border-radius: 2px;
+  h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__separator {
+    margin-bottom: 10px;
+    height: 3px;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  &__checkboxs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5px;
+  }
+  &__notmatching {
+    font-size: 40px;
+    font-weight: 500;
+    color: $plate;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.filterList {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  &__sectionCaption {
+    color: #7b7b7b;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 150.188%;
+    margin-bottom: 10px;
+  }
+  &__sectionList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__filter {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #e9f1fd;
+      border: 1px solid #b1cefa;
+      // .filterList {
+      //   &__button {
+      //   }
+      //   &__closebutton {
+      //     &::before {
+      //       background: #9e1c1c;
+      //     }
+
+      //     &::after {
+      //       background: #9e1c1c;
+      //     }
+      //   }
+      // }
+    }
+  }
+  &__button {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+
+      top: 50%;
+      right: 0;
+      background: #ffffff;
+      border-radius: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  &__closebutton {
+    position: relative;
+    &::before {
+      transition: all 0.3s ease 0s;
+      content: "";
+      position: absolute;
+      width: 13px;
+      top: 0;
+      right: 0;
+      background: #1c629e;
+      transform: rotate(45deg);
+      height: 1.5px;
+    }
+
+    &::after {
+      transition: all 0.3s ease 0s;
+      content: "";
+      position: absolute;
+      width: 13px;
+      top: 0;
+      right: 0;
+      background: #1c629e;
+      transform: rotate(-45deg);
+      height: 1.5px;
+    }
+  }
+}
+
+.filterBottomContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterListSeparator {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.catalog__Slider {
+  background: #000;
+  width: 100px;
+  height: 20px;
+}
+.track {
+  width: 10px;
+  height: 10px;
+  background: #ff0000;
+}
+
+.catalogPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.filteresCardlist {
+  justify-content: flex-start;
+}

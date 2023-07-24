@@ -1,0 +1,56 @@
+@import "@/app/styles/variables.scss";
+
+.contactstabs {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  width: 100%;
+  padding-left: 0;
+  flex: 0 0 290px;
+  padding: 20px;
+  &__container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.contactstab {
+  padding: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 5px;
+
+  color: #4e4c4c;
+  font-size: 16px;
+  line-height: 116%; /* 18.56px */
+  letter-spacing: 0.032px;
+  &:hover {
+    background: #edf4ff;
+  }
+  &--select {
+    background: #c3d8f8;
+    &:hover {
+      background: #c3d8f8;
+    }
+  }
+  &__content {
+    padding: 25px;
+    background: #ffffff;
+    width: 100%;
+    flex: 1 1 100%;
+    color: #4e4c4c;
+    display: flex;
+
+    font-size: 18px;
+    line-height: 150.188%; /* 27.034px */
+    &_wraper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.contactstabSep {
+  margin-right: 20px;
+}

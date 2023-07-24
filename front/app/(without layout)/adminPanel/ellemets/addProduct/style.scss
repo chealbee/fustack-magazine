@@ -1,0 +1,125 @@
+@import "@/app/styles/variables.scss";
+
+.AaddProduct {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__input {
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    &:hover {
+      box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+    }
+    border: 1px solid rgba(89, 174, 224, 0.8);
+  }
+
+  &__textarea {
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 10px;
+    &:hover {
+      box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+    }
+    border: 1px solid rgba(89, 174, 224, 0.8);
+    height: 200px;
+    resize: vertical;
+  }
+  &__infoBlock {
+  }
+  &__brand {
+  }
+  &__type {
+  }
+  &__button {
+    color: #9e9e9e;
+    font-size: 12px;
+    line-height: 150.188%;
+    cursor: pointer;
+    padding: 10px 30px;
+    &:hover {
+      box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+      color: rgba(89, 174, 224);
+    }
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+.infoBlock {
+  &__bottom {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__content {
+  }
+  &__inputName {
+    width: 210px;
+  }
+  &__inputValue {
+    width: 210px;
+  }
+}
+.infoBlockContent {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $plate;
+  border-radius: 5px;
+  &__item {
+    padding: 10px 20px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    padding-right: 9px;
+    align-items: center;
+    border: 1px solid rgba(89, 174, 224, 0);
+    &:hover {
+      // box-shadow: 0 0 5px rgba(89, 174, 224, 0.1);
+      border: 1px solid $plate;
+    }
+  }
+  &__text {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 285px;
+  }
+  &__name {
+  }
+  &__value {
+  }
+  &__delete {
+    color: #9e9e9e;
+    font-size: 12px;
+    line-height: 150.188%;
+    cursor: pointer;
+    padding: 5px 30px;
+    &:hover {
+      box-shadow: 0 0 5px rgb(224, 89, 93, 0.8);
+      color: rgb(224, 89, 93);
+    }
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+  }
+  &__add {
+    color: #9e9e9e;
+    font-size: 12px;
+    line-height: 150.188%;
+    cursor: pointer;
+    padding: 5px 30px;
+    &:hover {
+      box-shadow: 0 0 5px rgba(89, 174, 224, 0.8);
+      color: rgba(89, 174, 224);
+    }
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    text-align: center;
+  }
+}

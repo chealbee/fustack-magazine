@@ -1,0 +1,46 @@
+.MYuser {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__content {
+    background: #2d2d2d;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__text {
+    color: white;
+    font-size: 17px;
+  }
+  &__out {
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      color: white;
+    }
+  }
+}
+
+.adminPanel {
+  font-size: 17px;
+  text-decoration: underline;
+}

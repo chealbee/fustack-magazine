@@ -1,0 +1,46 @@
+@import "@/app/styles/variables.scss";
+
+.ArrayOf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 200px;
+  margin-top: 20px;
+  width: 500px;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 20px;
+
+  &::-webkit-scrollbar {
+    border-radius: 5px;
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $plate;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $BrandBlue;
+    border-radius: 5px;
+  }
+}
+.Ofname {
+  font-size: 17px;
+}
+.Ofdelete {
+  color: #9e9e9e;
+  font-size: 12px;
+  line-height: 150.188%;
+  cursor: pointer;
+  padding: 10px 30px;
+  &:hover {
+    box-shadow: 0 0 5px rgb(224, 89, 93, 0.8);
+    color: rgb(224, 89, 93);
+  }
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}

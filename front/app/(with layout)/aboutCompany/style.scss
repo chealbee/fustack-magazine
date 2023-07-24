@@ -1,0 +1,33 @@
+.ABOUTimg {
+  width: 90%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.ABOUTimgs {
+  display: flex;
+  flex-direction: column;
+}
+.ABOUTimg__left {
+  align-self: flex-start;
+}
+.ABOUTimg__right {
+  align-self: flex-end;
+}
+
+.aboutTextInfo {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  margin-bottom: -120px;
+  position: relative;
+  z-index: 1;
+  line-height: 20px;
+}
+.about__heading {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 700;
+}

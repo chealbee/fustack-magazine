@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.pagintion {
+  display: flex;
+  gap: 5px;
+  &__page {
+    transition: all 0.3s ease 0s;
+    background: white;
+
+    border-radius: 3px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 14px;
+    a {
+      padding: 5px;
+      height: 33px;
+      width: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_active {
+      color: white;
+      background: $BrandBlue;
+      box-shadow: 0 0 1px $BrandBlue;
+      &:hover {
+        background: $BrandBlue;
+      }
+    }
+    box-shadow: 0 0 0px transparent;
+    &:hover {
+      box-shadow: 0 0 3px $plate;
+      background: #def0ff;
+    }
+  }
+  &__previous {
+    //  transition: all 0.3s ease 0s;
+    //  background: $BrandBlue;
+    //  color: white;
+    //  height: 25px;
+    //  border-radius: 5px;
+    //  flex: 0 0 25px;
+    //  display: flex;
+    //  justify-content: center;
+    //  align-items: center;
+    display: none;
+  }
+  &__next {
+    //  color: white;
+    //  transition: all 0.3s ease 0s;
+    //  border-radius: 5px;
+    //  background: $BrandBlue;
+    //  height: 25px;
+    //  flex: 0 0 25px;
+    //  display: flex;
+    //  justify-content: center;
+    //  align-items: center;
+    display: none;
+  }
+  //   &__disabled {
+  //     background: #999999;
+  //   }
+  &__break {
+    cursor: pointer;
+    font-size: 20px;
+    color: #5e5e5e;
+  }
+}

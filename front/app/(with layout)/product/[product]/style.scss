@@ -1,0 +1,90 @@
+@import "@/app/styles/variables.scss";
+
+.Product {
+  &__heading {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $base-color;
+  }
+  &__content {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    padding-bottom: 60px;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  &__photos {
+    width: 500px;
+    height: auto;
+    flex: 0 0 500px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  &__price {
+    color: $base-color;
+    font-size: 28px;
+  }
+  &__typebrand {
+    color: $base-color;
+  }
+  &__button {
+    font-size: 20px;
+    padding: 10px 40px;
+    color: #4e4c4c;
+    display: flex;
+    gap: 10px;
+    &:hover {
+      color: #4e4c4c;
+    }
+  }
+  &__name {
+    font-size: 27px;
+    color: $base-color;
+  }
+  &__descrioption {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  &__haractericsticks {
+  }
+  &__haractericstick {
+    margin-bottom: 20px;
+    &_heding {
+      color: $base-color;
+      font-size: 17px;
+      opacity: 0.9;
+      margin-bottom: 5px;
+    }
+    &_value {
+      font-size: 16px;
+    }
+  }
+  &__image {
+    position: relative;
+    padding-bottom: 60%;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  }
+}
+.youlike {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.productList {
+  margin-bottom: 30px;
+}
