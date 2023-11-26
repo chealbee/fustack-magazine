@@ -1,4 +1,12 @@
 # fustack-magazine
+
+Technologies used: React, TypeScript, Next.js, Zustand instead of Redux, SCSS\SASS, Node.js, Nest.js, Axios, Classnames, Bcryptjs, JWT, Sequelize, PostgreSQL
+
+Was implemented: registration, authorization, admin panel with the ability to add and delete brands, types, products. 
+Was implemented: catalog page with the ability to filter products by brand, type, descending price, ascending price, ascending price, price range, and pagination.
+Was implemented: home page with carousel, product page, shopping cart, company page, delivery page, and about page.
+You can view the code here: https://github.com/chealbee/fustack-magazine
+
 ![Screenshot 2023-07-24 142450](https://github.com/chealbee/fustack-magazine/assets/95652664/88b2fdd0-4641-4e7b-961e-a7577b45f2ee)
 ![Screenshot 2023-07-24 142107](https://github.com/chealbee/fustack-magazine/assets/95652664/e5fefab8-d959-4ac8-8fcd-cd9bcea595f8)
 ![Screenshot 2023-07-24 142005](https://github.com/chealbee/fustack-magazine/assets/95652664/ee2b7c40-f2e0-4dbb-ae20-9d2afa8cbfd3)
